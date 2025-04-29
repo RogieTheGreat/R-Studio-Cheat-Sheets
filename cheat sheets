@@ -1,0 +1,20 @@
+# Objects to keep
+dont_rm_ls <- c("obj1", "obj2", "obj3")
+
+# List all objects in the workspace
+all_objects <- ls()
+
+# Identify objects to remove
+objects_to_remove <- setdiff(all_objects, dont_rm_ls)
+
+# Remove objects
+rm(list = objects_to_remove)
+
+Clear Workspace:
+
+rm(list = ls())
+
+
+Clear Console: 
+
+cat("\014")
